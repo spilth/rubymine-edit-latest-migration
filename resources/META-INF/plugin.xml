@@ -1,0 +1,31 @@
+<idea-plugin>
+  <id>org.spilth.rubymine.migrations</id>
+  <name>Edit Latest Migration</name>
+  <version>1.0</version>
+  <vendor email="brian@spilth.org" url="http://spilth.org/">spilth.org</vendor>
+
+  <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="RM-173"/>
+  <depends>com.intellij.modules.ruby</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <action id="EditLatestMigration" class="org.spilth.rubymine.migrations.EditLatestMigrationAction"
+            text="Edit Latest Migration" description="Loads the newest migration into the edit window">
+      <add-to-group group-id="GoToMenu" anchor="first"/>
+    </action>
+  </actions>
+</idea-plugin>
