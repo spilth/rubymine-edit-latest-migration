@@ -1,17 +1,16 @@
 <idea-plugin>
   <id>org.spilth.rubymine.migrations</id>
-  <name>Edit Latest Migration</name>
-  <version>1.0</version>
-  <vendor email="brian@spilth.org" url="http://spilth.org/">spilth.org</vendor>
+  <name>Edit Latest Rails Migration</name>
+  <version>1.1</version>
+  <vendor email="polymonic@gmail.com" url="http://spilth.org/">spilth.org</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      Adds an Action for opening the latest Ruby on Rails Database Migration. Can be bound to a shortcut key.
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+      1.1 - Converted plugin Kotlin. Add better descriptions.
+      1.0 - Initial release
     ]]>
   </change-notes>
 
@@ -24,7 +23,7 @@
 
   <actions>
     <action id="EditLatestMigration" class="org.spilth.rubymine.migrations.EditLatestMigrationAction"
-            text="Edit Latest Migration" description="Loads the newest migration into the edit window">
+            text="Edit Latest Migration" description="Loads the latest Ruby on Rails database migration into the edit window">
       <add-to-group group-id="GoToMenu" anchor="first"/>
     </action>
   </actions>
